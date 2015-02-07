@@ -16,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    MBFDog *myDog = [[MBFDog alloc] init];
+    
+    myDog.name = @"Nana";
+    myDog.breed = @"St. Bernard";
+    myDog.age = 1;
+    
+    NSLog(@"my dog's name is: %@, it's a %@, and its age is: %i", myDog.name, myDog.breed, myDog.age);
+
+
 }
 
 - (void)didReceiveMemoryWarning {

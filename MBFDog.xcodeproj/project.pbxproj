@@ -14,6 +14,7 @@
 		DF57EA6E1A86CBAD005C0F0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF57EA6D1A86CBAD005C0F0E /* Images.xcassets */; };
 		DF57EA711A86CBAD005C0F0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF57EA6F1A86CBAD005C0F0E /* LaunchScreen.xib */; };
 		DF57EA7D1A86CBAD005C0F0E /* MBFDogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57EA7C1A86CBAD005C0F0E /* MBFDogTests.m */; };
+		DF57EA881A86CBD6005C0F0E /* MBFDog.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57EA871A86CBD6005C0F0E /* MBFDog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		DF57EA761A86CBAD005C0F0E /* MBFDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBFDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF57EA7B1A86CBAD005C0F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF57EA7C1A86CBAD005C0F0E /* MBFDogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBFDogTests.m; sourceTree = "<group>"; };
+		DF57EA861A86CBD6005C0F0E /* MBFDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFDog.h; sourceTree = "<group>"; };
+		DF57EA871A86CBD6005C0F0E /* MBFDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFDog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				DF57EA671A86CBAD005C0F0E /* ViewController.h */,
 				DF57EA681A86CBAD005C0F0E /* ViewController.m */,
 				DF57EA6A1A86CBAD005C0F0E /* Main.storyboard */,
+				DF57EA861A86CBD6005C0F0E /* MBFDog.h */,
+				DF57EA871A86CBD6005C0F0E /* MBFDog.m */,
 				DF57EA6D1A86CBAD005C0F0E /* Images.xcassets */,
 				DF57EA6F1A86CBAD005C0F0E /* LaunchScreen.xib */,
 				DF57EA601A86CBAD005C0F0E /* Supporting Files */,
@@ -221,6 +226,7 @@
 			files = (
 				DF57EA691A86CBAD005C0F0E /* ViewController.m in Sources */,
 				DF57EA661A86CBAD005C0F0E /* AppDelegate.m in Sources */,
+				DF57EA881A86CBD6005C0F0E /* MBFDog.m in Sources */,
 				DF57EA631A86CBAD005C0F0E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
