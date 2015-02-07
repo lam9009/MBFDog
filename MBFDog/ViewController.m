@@ -21,8 +21,10 @@
     myDog.name = @"Nana";
     myDog.breed = @"St. Bernard";
     myDog.age = 1;
+    //[myDog bark];
+    [myDog bardANumberOfTimes:3];
     
-    NSLog(@"my dog's name is: %@, it's a %@, and its age is: %i", myDog.name, myDog.breed, myDog.age);
+    //NSLog(@"my dog's name is: %@, it's a %@, and its age is: %i", myDog.name, myDog.breed, myDog.age);
 
 
 }

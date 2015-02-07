@@ -15,4 +15,6 @@
 @property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) NSString *name;
 
+- (void) bark;
+- (void) bardANumberOfTimes:(int)numberOfTimes;
 @end
