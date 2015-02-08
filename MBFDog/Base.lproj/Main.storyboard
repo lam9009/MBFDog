@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5nF-T9-764">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5nF-T9-764">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="L6m-AO-br4"/>
@@ -31,22 +33,22 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="St.Bernard.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="SzZ-Fx-bQr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="St.Bernard.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="SzZ-Fx-bQr">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="XH2-38-KNG"/>
-                                </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahi-Va-x7M">
                                 <rect key="frame" x="154" y="410" width="307" height="61"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vl-S8-cuW">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vl-S8-cuW">
                                         <rect key="frame" x="20" y="20" width="100" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="dHq-X8-FFs"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhR-3B-e17">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhR-3B-e17">
                                         <rect key="frame" x="187" y="20" width="100" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -54,6 +56,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3vl-S8-cuW" firstAttribute="leading" secondItem="ahi-Va-x7M" secondAttribute="leading" constant="20" id="0t5-V4-Cx2"/>
+                                    <constraint firstAttribute="trailing" secondItem="OhR-3B-e17" secondAttribute="trailing" constant="20" id="3xM-c9-kI3"/>
+                                    <constraint firstItem="OhR-3B-e17" firstAttribute="leading" secondItem="3vl-S8-cuW" secondAttribute="trailing" constant="67" id="JGy-Xq-6yp"/>
+                                    <constraint firstItem="3vl-S8-cuW" firstAttribute="top" secondItem="ahi-Va-x7M" secondAttribute="top" constant="20" id="JXP-Xz-LO3"/>
+                                    <constraint firstItem="3vl-S8-cuW" firstAttribute="centerY" secondItem="ahi-Va-x7M" secondAttribute="centerY" id="b3e-zV-ccw"/>
+                                    <constraint firstItem="OhR-3B-e17" firstAttribute="baseline" secondItem="3vl-S8-cuW" secondAttribute="firstBaseline" id="fMY-NE-SWS"/>
+                                    <constraint firstItem="3vl-S8-cuW" firstAttribute="baseline" secondItem="OhR-3B-e17" secondAttribute="baseline" id="ta2-ac-YTI"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -61,8 +72,14 @@
                             <constraint firstAttribute="centerX" secondItem="ahi-Va-x7M" secondAttribute="centerX" id="04K-t7-JbA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5nF-T9-764" secondAttribute="trailing" constant="2" id="1HP-pH-RWq"/>
                             <constraint firstItem="5nF-T9-764" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="2" id="4nM-2m-v3A"/>
+                            <constraint firstItem="SzZ-Fx-bQr" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="Pwb-9h-q6b"/>
+                            <constraint firstItem="ahi-Va-x7M" firstAttribute="top" secondItem="SzZ-Fx-bQr" secondAttribute="bottom" constant="60" id="X7r-EQ-moD"/>
+                            <constraint firstItem="SzZ-Fx-bQr" firstAttribute="leading" secondItem="5nF-T9-764" secondAttribute="leading" id="XrG-aQ-6ny"/>
+                            <constraint firstItem="ahi-Va-x7M" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="bue-ff-Rz8"/>
                             <constraint firstItem="5nF-T9-764" firstAttribute="top" secondItem="ahi-Va-x7M" secondAttribute="bottom" constant="40" id="kS9-ne-JvA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ahi-Va-x7M" secondAttribute="trailing" constant="40" id="llM-eN-aMw"/>
                             <constraint firstAttribute="centerX" secondItem="5nF-T9-764" secondAttribute="centerX" id="qIw-tw-TWm"/>
+                            <constraint firstItem="5nF-T9-764" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="tOW-oD-tAE"/>
                             <constraint firstAttribute="centerX" secondItem="SzZ-Fx-bQr" secondAttribute="centerX" id="taB-KJ-8Dx"/>
                         </constraints>
                     </view>

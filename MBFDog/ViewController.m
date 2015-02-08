@@ -18,6 +18,7 @@
     [super viewDidLoad];
     MBFDog *myDog = [[MBFDog alloc] init];
     self.myDogs = [[NSMutableArray alloc] init];
+    self.currentIndex = 0;
     
     myDog.name = @"Nana";
     myDog.breed = @"St. Bernard";
@@ -71,11 +72,28 @@
 - (IBAction)newDogBarItemButtonPressed:(UIBarButtonItem *)sender {
     int numberOfDogs = [self.myDogs count];
     int randomIndex = arc4random() % numberOfDogs;
+    
+    if (self.currentIndex == randomIndex && self.currentIndex == 0){
+        randomIndex ++;
+    }
+    else if (self.currentIndex == randomIndex){
+        randomIndex --;
+    }
+    self.currentIndex = randomIndex;
+    
     MBFDog *randomDog = [self.myDogs objectAtIndex:randomIndex];
     
-    self.myImageView.image = randomDog.image;
-    self.breedLabel.text = randomDog.breed;
-    self.nameLabel.text = randomDog.name;
+//    self.myImageView.image = randomDog.image;
+//    self.breedLabel.text = randomDog.breed;
+//    self.nameLabel.text = randomDog.name;
+    
+    [UIView transitionWithView:self.view duration:2.5 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        self.myImageView.image = randomDog.image;
+        self.breedLabel.text = randomDog.breed;
+        self.nameLabel.text = randomDog.name;
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

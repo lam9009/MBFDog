@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *myImageView;
 @property (strong, nonatomic) IBOutlet UILabel *breedLabel;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (nonatomic) int currentIndex;
 
 @end
 
