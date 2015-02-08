@@ -68,6 +68,16 @@
     NSLog(@"This is my hello world!");
 }
 
+- (IBAction)newDogBarItemButtonPressed:(UIBarButtonItem *)sender {
+    int numberOfDogs = [self.myDogs count];
+    int randomIndex = arc4random() % numberOfDogs;
+    MBFDog *randomDog = [self.myDogs objectAtIndex:randomIndex];
+    
+    self.myImageView.image = randomDog.image;
+    self.breedLabel.text = randomDog.breed;
+    self.nameLabel.text = randomDog.name;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
