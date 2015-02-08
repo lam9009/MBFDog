@@ -11,6 +11,9 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic)NSMutableArray *myDogs;
+
+- (void) printHelloWorld;
 
 @end
 

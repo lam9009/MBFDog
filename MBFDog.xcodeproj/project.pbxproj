@@ -15,6 +15,11 @@
 		DF57EA711A86CBAD005C0F0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF57EA6F1A86CBAD005C0F0E /* LaunchScreen.xib */; };
 		DF57EA7D1A86CBAD005C0F0E /* MBFDogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57EA7C1A86CBAD005C0F0E /* MBFDogTests.m */; };
 		DF57EA881A86CBD6005C0F0E /* MBFDog.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57EA871A86CBD6005C0F0E /* MBFDog.m */; };
+		DFEFF2F51A871CEA002C1E37 /* Bo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFEFF2F01A871CEA002C1E37 /* Bo.jpg */; };
+		DFEFF2F61A871CEA002C1E37 /* BorderCollie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFEFF2F11A871CEA002C1E37 /* BorderCollie.jpg */; };
+		DFEFF2F71A871CEA002C1E37 /* ItalianGreyhound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFEFF2F21A871CEA002C1E37 /* ItalianGreyhound.jpg */; };
+		DFEFF2F81A871CEA002C1E37 /* JRT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFEFF2F31A871CEA002C1E37 /* JRT.jpg */; };
+		DFEFF2F91A871CEA002C1E37 /* St.Bernard.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DFEFF2F41A871CEA002C1E37 /* St.Bernard.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,11 @@
 		DF57EA7C1A86CBAD005C0F0E /* MBFDogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBFDogTests.m; sourceTree = "<group>"; };
 		DF57EA861A86CBD6005C0F0E /* MBFDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFDog.h; sourceTree = "<group>"; };
 		DF57EA871A86CBD6005C0F0E /* MBFDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFDog.m; sourceTree = "<group>"; };
+		DFEFF2F01A871CEA002C1E37 /* Bo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bo.jpg; sourceTree = "<group>"; };
+		DFEFF2F11A871CEA002C1E37 /* BorderCollie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BorderCollie.jpg; sourceTree = "<group>"; };
+		DFEFF2F21A871CEA002C1E37 /* ItalianGreyhound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ItalianGreyhound.jpg; sourceTree = "<group>"; };
+		DFEFF2F31A871CEA002C1E37 /* JRT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JRT.jpg; sourceTree = "<group>"; };
+		DFEFF2F41A871CEA002C1E37 /* St.Bernard.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = St.Bernard.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,7 @@
 		DF57EA601A86CBAD005C0F0E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFEFF2EF1A871CEA002C1E37 /* Images */,
 				DF57EA611A86CBAD005C0F0E /* Info.plist */,
 				DF57EA621A86CBAD005C0F0E /* main.m */,
 			);
@@ -122,6 +133,19 @@
 				DF57EA7B1A86CBAD005C0F0E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFEFF2EF1A871CEA002C1E37 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DFEFF2F01A871CEA002C1E37 /* Bo.jpg */,
+				DFEFF2F11A871CEA002C1E37 /* BorderCollie.jpg */,
+				DFEFF2F21A871CEA002C1E37 /* ItalianGreyhound.jpg */,
+				DFEFF2F31A871CEA002C1E37 /* JRT.jpg */,
+				DFEFF2F41A871CEA002C1E37 /* St.Bernard.JPG */,
+			);
+			name = Images;
+			path = "dog-image-assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +228,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFEFF2F91A871CEA002C1E37 /* St.Bernard.JPG in Resources */,
+				DFEFF2F71A871CEA002C1E37 /* ItalianGreyhound.jpg in Resources */,
 				DF57EA6C1A86CBAD005C0F0E /* Main.storyboard in Resources */,
+				DFEFF2F81A871CEA002C1E37 /* JRT.jpg in Resources */,
 				DF57EA711A86CBAD005C0F0E /* LaunchScreen.xib in Resources */,
+				DFEFF2F61A871CEA002C1E37 /* BorderCollie.jpg in Resources */,
+				DFEFF2F51A871CEA002C1E37 /* Bo.jpg in Resources */,
 				DF57EA6E1A86CBAD005C0F0E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +447,7 @@
 				DF57EA821A86CBAD005C0F0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF57EA831A86CBAD005C0F0E /* Build configuration list for PBXNativeTarget "MBFDogTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +456,7 @@
 				DF57EA851A86CBAD005C0F0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

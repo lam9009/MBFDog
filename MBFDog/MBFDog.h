@@ -16,5 +16,9 @@
 @property (strong, nonatomic) NSString *name;
 
 - (void) bark;
-- (void) bardANumberOfTimes:(int)numberOfTimes;
+- (void) barkANumberOfTimes:(int)numberOfTimes;
+- (void) changeBreedToChiWaWa;
+- (void) barkANumberOfTimes:(int)numberOfTimes loudly:(BOOL)isLoud;
+- (int) ageInDogYearsFromAge: (int) regularAge;
+
 @end
